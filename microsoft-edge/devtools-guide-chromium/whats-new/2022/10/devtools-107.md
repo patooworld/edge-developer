@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 107)
+title: What's New in DevTools (Microsoft Edge 107)
 description: "Automate WebView2 with Playwright. Focus Mode Activity Bar icons have tooltips. New shortcut key for Command Palette. Memory tool loads larger heap snapshots. Links in Application tool render in high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 10/31/2022
 ---
 # What's New in DevTools (Microsoft Edge 107)
@@ -32,16 +33,13 @@ See also:
 
 <!-- Subtitle: When text labels are not visible in the Activity Bar, the name of the tool will appear while hovering over the icon. -->
 
-Starting in Microsoft Edge 107, in Focus Mode, the Activity Bar now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
+Starting in Microsoft Edge 107, in Focus Mode, the **Activity Bar** now displays tooltips when you hover over tool icons.  These tooltips appear immediately and help you quickly identify and switch between tools:
 
 ![Activity Bar tooltips](./devtools-107-images/activity-bar-tooltips.png)
 
-When the Activity Bar is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
+When the **Activity Bar** is horizontal, a tooltip appears when a tool icon doesn't already have a text label next to it:
 
 ![Tooltips for horizontal Activity Bar icons](./devtools-107-images/activity-bar-tooltips-horizontal.png)
-
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -49,9 +47,9 @@ See also:
 
 <!-- Subtitle: Enable the Command Palette experiment in Microsoft Edge 107 and open it with Ctrl+Q (Command+Q on macOS). -->
 
-In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from `Shift`+`Ctrl`+`Spacebar` to `Ctrl`+`Q` on Windows, macOS, and Linux.
+In [Microsoft Edge 106](../09/devtools-106.md#introducing-the-command-palette), we introduced the Command Palette, an experimental feature for accessing browser management and developer tools commands.  In Microsoft Edge 107, the keyboard shortcut for opening the Command Palette has been updated from **Shift+Ctrl+Spacebar** to **Ctrl+Q** on Windows, macOS, and Linux.
 
-To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.  After the Command Palette experiment is enabled, press `Ctrl`+`Q` to open the Command Palette.
+To enable the Command Palette experiment, see [Enable Command Palette](../../../experimental-features/edge-command-palette.md#enable-command-palette) in _Run commands via keyboard with Command Palette_.  After the Command Palette experiment is enabled, press **Ctrl+Q** to open the Command Palette.
 
 ![Command Palette](./devtools-107-images/command-palette.png)
 

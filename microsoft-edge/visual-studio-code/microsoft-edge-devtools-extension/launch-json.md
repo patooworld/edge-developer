@@ -4,14 +4,14 @@ description: The launch.json file for the Microsoft Edge DevTools extension for 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # The launch.json file for the DevTools extension
 
 Visual Studio Code uses a `launch.json` file to define debug configurations.  To use the DevTools extension, a `launch.json` file is only needed if you want to use the debugger and your webpage requires running on a web server, not just a local file system.  In most cases, the only thing you need to know about the content of the DevTools-generated `launch.json` file (if you choose to use it) is that you need to enter your desired URL in the `"url"` string in several places.  Read this article if you want to use custom, advanced debug configurations.
 
-If you want to use Visual Studio Code's UI such as `F5` to start the **DevTools** tabs along with Debug mode, your opened folder (workspace) must contain a DevTools-generated (DevTools-compatible) `launch.json` file in the `.vscode` directory.
+If you want to use Visual Studio Code's UI such as **F5** to start the **DevTools** tabs along with Debug mode, your opened folder (workspace) must contain a DevTools-generated (DevTools-compatible) `launch.json` file in the `.vscode` directory.
 
 Details about the `launch.json` file format are below.  You normally don't need to change anything in the file except to replace several instances of the URL string, as explained in [Opening DevTools by clicking the Launch Project button](./open-devtools-and-embedded-browser.md#opening-devtools-by-clicking-the-launch-project-button) in _Opening DevTools and the DevTools browser_.
 
@@ -27,11 +27,11 @@ The `"name"` string of each debug configuration populates dropdown lists in seve
 
    Suppose no `launch.json` file exists in the `.vscode` directory.
 
-1. Select Activity Bar > **Microsoft Edge Tools** > click the **Generate launch.json** button.
+1. Select **Activity Bar** > **Microsoft Edge Tools** > click the **Generate launch.json** button.
 
-1. In Activity Bar > **Explorer**, double-click `index.html` to open it.
+1. In **Activity Bar** > **Explorer**, double-click `index.html` to open it.
 
-1. Select Activity Bar > **Run and Debug** > click the **Run and Debug** button.
+1. Select **Activity Bar** > **Run and Debug** > click the **Run and Debug** button.
 
    In the **Run and Debug** Side Bar in the upper left, the strings are **Launch Edge Headless and attach DevTools** and **Launch Edge and attach DevTools**.  In the bottom of the Visual Studio Code window, the string is **Launch Edge Headless and attach DevTools**.  These are names of compound configurations in the `.json` file, telling the Visual Studio Code debugger to open the two **DevTools** tabs, or else the **DevTools** tab and an external browser:
 

@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 102)
+title: What's New in DevTools (Microsoft Edge 102)
 description: "DevTools extension: browser preview device/mode emulation and sourcemaps to debug/edit Sass/React.  Save heap snapshot strings to JSON.  Retainers filters in Memory tool.  Inspect tooltip persists.  Better high-contrast display.  Experiments have Help icons.  Improved Network tool layout. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 05/24/2022
 ---
 # What's New in DevTools (Microsoft Edge 102)
@@ -82,7 +83,7 @@ The second and potentially subsequent appearances of the node are still displaye
 _Internal nodes_ are objects that are specific to V8 (the JavaScript engine in Microsoft Edge).  Internal nodes are also displayed in the **Retainers** section.
 
 See also:
-* [Cycles](../../../memory-problems/memory-101.md#cycles) in _Memory terminology_.
+* [Hide cycles](../../../memory-problems/heap-snapshots.md#hide-cycles) in _Record heap snapshots using the Memory tool_.
 
 
 <!-- ====================================================================== -->
@@ -91,13 +92,13 @@ See also:
 <!-- Title: Improving the Inspect element tooltip -->
 <!-- Subtitle: The Inspect element tooltip now persists until you dismiss it, improving accessibility and ease of use. -->
 
-Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon](../../../media/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
+Previously, in the **Elements** tool, the overlay for the node that you selected only displayed on hover when you used the **Inspect tool** (![Inspect tool icon](./devtools-102-images/inspect-tool-icon-light-theme.png)).  The previous design was difficult to use with a screen magnifier or other assistive technologies.
 
-In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold `Ctrl`+`Alt` (Windows, Linux) or `Ctrl`+`Option` (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
+In Microsoft Edge 102, when using the **Inspect** tool and moving around the rendered webpage, you can keep the current **Inspect** overlay displayed.  Press and hold **Ctrl+Alt** (Windows, Linux) or **Ctrl+Option** (macOS) while you move around in the rendered webpage.  The existing tooltip and grid color overlay for the **Inspect** tool remains displayed while you hover over different parts of the rendered webpage:
 
 ![The Inspect element tooltip](devtools-102-images/inspect-element-tooltip-persists.png)
 
-Also, you can now press `Ctrl` to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
+Also, you can now press **Ctrl** to hide the Inspect tool's overlay while you move the mouse pointer over the rendered webpage.
 
 For the history of this feature in the Chromium open-source project, see Issue [1316208](https://crbug.com/1316208).
 
@@ -110,7 +111,7 @@ See also:
 ## Improved rendering of dropdown menus, buttons, and icons in high-contrast mode
 
 <!-- Title: Accessibility improvements for high contrast mode -->
-<!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the activity bar in Focus Mode now display better in high contrast. -->
+<!-- Subtitle: Dropdown menu in the Issues tool, buttons in the Detached Elements tool, and the Activity Bar in Focus Mode now display better in high contrast. -->
 
 In previous versions of Microsoft Edge, the following items didn't render correctly in high-contrast mode:
 *  Dropdown menus in the **Issues** tool.
@@ -127,14 +128,13 @@ The **Detached Elements** tool's UI is displayed correctly in high-contrast mode
 
 ![Detached Elements tool in high-contrast mode](devtools-102-images/high-contrast-detached-elements.png)
 
-The **Activity Bar** and **Quick View** (of Focus Mode) are displayed correctly in high-contrast mode:
+The **Activity Bar** and **Quick View** panel (when using Focus Mode) are displayed correctly in high-contrast mode:
 
 ![Activity Bar in Focus Mode](devtools-102-images/high-contrast-activity-bar.png)
 
 See also:
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
 * [Windows high contrast mode](/fluent-ui/web-components/design-system/high-contrast)
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 
 
 <!-- ====================================================================== -->
@@ -147,7 +147,7 @@ In the **Settings** > **Experiments** page, each experiment now has a **Help** (
 
 ![Help icons for Settings > Experiments checkboxes](devtools-102-images/settings-experiments-help-icons.png)
 
-To get more information about an experimental feature, click the corresponding **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features](../../../experimental-features/index.md) article.
+To get more information about an experimental feature, click the corresponding **Help** (![Help icon](devtools-102-images/settings-experiments-help-icon.png)) button.  The **Help** button displays the relevant section of the [Experimental features in Microsoft Edge DevTools](../../../experimental-features/index.md) article.
 
 
 <!-- ====================================================================== -->

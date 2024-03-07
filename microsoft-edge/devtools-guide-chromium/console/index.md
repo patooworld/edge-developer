@@ -4,8 +4,9 @@ description: An introduction to the Console tool inside the Microsoft Edge Devel
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 04/13/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/12/2023
 ---
 # Console overview
 
@@ -16,28 +17,28 @@ The **Console** tool helps with several tasks, which are covered in more detail 
 * **Track down problems** to find out why something isn't working in the current project.  See [Fix JavaScript errors that are reported in the Console](console-debug-javascript.md).
 * **Get information about the web project** in the browser as log messages.  See [Filter Console messages](console-filters.md).
 * **Log information** in scripts for debugging purposes.  See [Log messages in the Console tool](console-log.md).
-* **Try JavaScript expressions** live in a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
+* **Try JavaScript expressions** live in a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  See [Run JavaScript in the Console](console-javascript.md).
 * **Interact with the web project in the browser** using JavaScript.  See [Interact with the DOM using the Console](console-dom-interaction.md).
 
-You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the main toolbar:
+You can open the **Console** tool in the top or bottom of DevTools; it's shown here in upper part, on the **Activity Bar**:
 
-![The Console tool open in the upper panel](../media/console-intro-console-main.msft.png)
+![The Console tool open in the upper panel](./index-images/console-main.png)
 
-The **Console** is shown here in the lower part of DevTools (the **Drawer**), with the **Elements** tool open above it:
+The **Console** is shown here in the lower part of DevTools (the **Quick View** panel), with the **Elements** tool open above it:
 
-![The Console in the lower panel with the Elements tool open above it](../media/console-intro-console-panel.msft.png)
+![The Console in the lower panel with the Elements tool open above it](./index-images/console-quick-view.png)
 
-The fastest way to directly open the **Console** is to press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+The fastest way to directly open the **Console** is to press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
 
 <!-- ====================================================================== -->
 ## Error reports and the Console
 
-The **Console** is the default place where JavaScript and connectivity errors are reported.  If any errors occur, the **Issues counter** is displayed next to the **Settings** icon in DevTools that provides the number of errors and warnings.  Click the **Issues counter** to open the **Issues** tool and display the problem.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
+The **Console** is the default place where JavaScript and connectivity errors are reported.  For more information, see [Fixing JavaScript errors that are reported in the Console](console-debug-javascript.md).
 
 DevTools gives detailed information about the error in the **Console**:
 
-![DevTools gives detailed information about the error in the Console](../media/console-debug-displays-error.msft.png)
+![DevTools gives detailed information about the error in the Console](./index-images/displays-error.png)
 
 
 <!-- ====================================================================== -->
@@ -45,14 +46,14 @@ DevTools gives detailed information about the error in the **Console**:
 
 Search the web for your **Console** error messages, right from within DevTools.  In the **Console**, many error messages have a **Search for this message on the Web** button, shown as a magnifying glass:
 
-![The 'Search for this message on the Web' button on an error message in the Console](../media/search-console-icon.msft.png)
+![The 'Search for this message on the Web' button on an error message in the Console](./index-images/search-console-icon.png)
 <!-- to set up screenshot, went to 
 https://learn.microsoft.com/microsoft-edge/devtools-guide-chromium/console/console-debug-javascript to get a good page that has an error: 
 https://microsoftedge.github.io/Demos/devtools-console/error.html -->
 
 When you click the **Search for this message on the Web** button, a new tab opens in the browser and shows search results for the error message:
 
-![The search results page in a new tab](../media/search-console-new-tab.msft.png)
+![The search results page in a new tab](./index-images/search-console-new-tab.png)
 
 
 <!-- ====================================================================== -->
@@ -64,7 +65,7 @@ Issues are gradually being moved from the **Console** to the **Issues** tool.  H
 
 DevTools with a **Console** full of messages:
 
-![DevTools with a Console full of messages](../media/console-intro-noise.msft.png)
+![DevTools with a Console full of messages](./index-images/noise.png)
 
 
 <!-- ====================================================================== -->
@@ -108,22 +109,22 @@ To log information to display in the Console:
 
 1. Open the demo webpage [Console messages examples: log, info, error and warn](https://microsoftedge.github.io/Demos/devtools-console/logging-demo.html) in a new window or tab.
 
-1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
    The **Console** displays the resulting messages that are caused by the demo code:
 
-   ![Console full of messages caused by demo code](../media/console-intro-logging.msft.png)
+   ![Console full of messages caused by demo code](./index-images/logging.png)
 
-1. Paste the above code into the **Console**, and then press `Enter`.
+1. Paste the above code into the **Console**, and then press **Enter**.
 
 
    If you get a message: `Uncaught SyntaxError: Identifier 'technologies' has already been declared`:
 
 1. Open a new tab or window.
 
-1. To open the **Console**, press `Ctrl`+`Shift`+`J` (Windows, Linux) or `Command`+`Option`+`J` (macOS).
+1. To open the **Console**, press **Ctrl+Shift+J** (Windows, Linux) or **Command+Option+J** (macOS).
 
-1. Paste the above code into the **Console**, and then press `Enter`.
+1. Paste the above code into the **Console**, and then press **Enter**.
 
 Many useful methods are available when you work with the **Console**.  For more information, see [Log messages in the Console tool](console-log.md).
 
@@ -131,7 +132,7 @@ Many useful methods are available when you work with the **Console**.  For more 
 <!-- ====================================================================== -->
 ## Try your JavaScript live in the Console
 
-The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.
+The **Console** isn't only a place to log information.  The **Console** is a [REPL](https://wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) environment.  When you write any JavaScript in the **Console**, the code runs immediately.  You may find it useful to test some new JavaScript features or to do some quick calculations.  Also, you get all of the features you expect from a modern editing environment, such as autocompletion, syntax highlighting, and history.
 
 To try running JavaScript in the Console:
 
@@ -141,35 +142,35 @@ To try running JavaScript in the Console:
 
 The **Console** displays the result of `2+2` live as you type it, displaying the result `4` on the following line:
 
-![The Console displays the result of 2+2 live as you type it](../media/console-javascript-eager-evaluation.msft.png)
+![The Console displays the result of 2+2 live as you type it](./index-images/eager-evaluation.png)
 
 This **Eager evaluation** feature is useful to debug and verify that you aren't making mistakes in your code.
 
-To run the JavaScript expression in the **Console** and optionally display a result, press `Enter`.  Then, you can write the next JavaScript code to run in the **Console**.
+To run the JavaScript expression in the **Console** and optionally display a result, press **Enter**.  Then, you can write the next JavaScript code to run in the **Console**.
 
 Running several lines of JavaScript code in succession:
 
-![Run several lines of JavaScript code in succession](../media/console-javascript-several-expressions.msft.png)
+![Run several lines of JavaScript code in succession](./index-images/several-expressions.png)
 
-By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press `Enter`.  To work around the single-line limitation, press `Shift`+`Enter` instead of `Enter`.
+By default, you run JavaScript code on a single line.  To run a line, type your JavaScript and then press **Enter**.  To work around the single-line limitation, press **Shift+Enter** instead of **Enter**.
 
-Similar to other command-line experiences, to access your previous JavaScript commands, press `Arrow-Up`.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
+Similar to other command-line experiences, to access your previous JavaScript commands, press **Up Arrow**.  The autocompletion feature of the **Console** is a great way to learn about unfamiliar methods.
 
 To try autocompletion:
 
 1. Open the **Console**.
 1. Type `doc`.
 1. Select `document` from the dropdown menu.
-1. Press `Tab` to select `document`.
+1. Press **Tab** to select `document`.
 1. Type `.bo`.
-1. Press `Tab` to select `document.body`.
+1. Press **Tab** to select `document.body`.
 1. Type another `.` to display the complete list of properties and methods available on the body of the current webpage.
 
 For more information about all the ways to work with **Console**, see [Console as a JavaScript environment](console-javascript.md).
 
 Autocompletion of JavaScript expressions in the **Console**:
 
-![Console autocompletion of JavaScript expressions](../media/console-javascript-autocomplete.msft.png)
+![Console autocompletion of JavaScript expressions](./index-images/autocomplete.png)
 
 
 <!-- ====================================================================== -->
@@ -184,7 +185,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    document.querySelector('h1').innerHTML
@@ -192,7 +193,7 @@ To use a JavaScript expression to read from the current page by reading a select
 
    This expression selects the first heading-level 1 from the DOM and then selects the HTML content that's contained between the `<h1>` start and end tags.  The **Console** displays the output of the expression, which is the text of the heading:
 
-   ![The Console displays the output of the expression, which is the text of the heading](../media/console-intro-reading-DOM.msft.png)
+   ![The Console displays the output of the expression, which is the text of the heading](./index-images/reading-DOM.png)
 
 You have read from the DOM representation of the webpage, by entering a JavaScript expression in the **Console** and displaying the output in the **Console**.
 
@@ -205,7 +206,7 @@ To change the rendered webpage:
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    document.querySelector('h1').innerHTML = 'Rocking the Console';
@@ -213,7 +214,7 @@ To change the rendered webpage:
 
    The above JavaScript expression uses the `=` sign to assign a value to the selected DOM item.  The evaluated value of the expression is a string for a heading, in this example.  The expression's value (the heading string) is shown both in the **Console** and in the rendered webpage:
 
-   ![Write text to the DOM in the Console](../media/console-intro-wrtiting-DOM.msft.png)
+   ![Write text to the DOM in the Console](./index-images/wrtiting-DOM.png)
 
    You changed the main heading of the webpage to **Rocking the Console**.
 
@@ -226,7 +227,7 @@ For example, to add a green border around all the links in the current webpage:
 
 1. Open the **Console**.
 
-1. Paste the following code into the **Console**, and then press `Enter`:
+1. Paste the following code into the **Console**, and then press **Enter**:
 
    ```javascript
    $$('a').forEach(a => a.style.border='1px solid lime');
@@ -234,7 +235,7 @@ For example, to add a green border around all the links in the current webpage:
 
    The `$$(selector)` console utility function is "Query selector all".  This DOM query selector function returns an array of all the elements that match the specified CSS selector, like the JavaScript function `document.querySelectorAll()`.  In this example, we select all the `<a>` hyperlink elements and then apply a green box around them:
 
-   ![Manipulate a selection of elements using the Console](../media/console-intro-changing-styles.msft.png)
+   ![Manipulate a selection of elements using the Console](./index-images/changing-styles.png)
 
 For more information, see [Console tool utility functions and selectors](utilities.md).
 

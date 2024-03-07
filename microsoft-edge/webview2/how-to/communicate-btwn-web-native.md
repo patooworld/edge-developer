@@ -4,8 +4,8 @@ description: Embed web content into native applications using WebView2.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 2/24/2022
 ---
 # Interop of native-side and web-side code
@@ -41,11 +41,11 @@ To see messaging in action:
 
    The following screen appears:
 
-   ![The Web Messaging sample page, which demonstrates basic interaction between the host app and the WebView2 instance by using Web Messages](../media/ScenarioWebMessaging.png)
+   ![The Web Messaging sample page, which demonstrates basic interaction between the host app and the WebView2 instance by using Web Messages](./communicate-btwn-web-native-images/ScenarioWebMessaging.png)
 
 1. Notice the first section, titled `Posting Messages`.  Follow the instruction and select **Script** > **Post Message JSON**.  Then click  **OK**. The message turns blue:
 
-   ![The 'Post Web Message JSON' demo](../media/postmessagejson.png)
+   ![The 'Post Web Message JSON' demo](./communicate-btwn-web-native-images/postmessagejson.png)
 
    How were we able to change text color?  The sample starts by creating a button, on the native side.  Then the sample adds the following code to post the web message when the button is clicked.  This code changes the color of the web text to blue.
 

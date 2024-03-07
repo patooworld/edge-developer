@@ -4,7 +4,7 @@ description: Learn how to build, design, and test accessible websites within Mic
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.assetid: 1e5c42a7-4604-46ac-ad7b-a65390e5b36a
 ms.date: 04/16/2020
 ---
@@ -36,8 +36,6 @@ See:
 
 * [Accessibility-testing features](../devtools-guide-chromium/accessibility/reference.md) - a list of accessibility aspects to test and the corresponding DevTools features.
 
-* [Overview of accessibility testing using DevTools](../devtools-guide-chromium/accessibility/accessibility-testing-in-devtools.md) - a walkthrough of testing a demo page for accessibility by using the DevTools features.
-
 
 <!-- ====================================================================== -->
 ## Microsoft UI Automation API
@@ -50,7 +48,7 @@ The [Microsoft Windows UI Automation blog](/archive/blogs/winuiautomation/) has 
 
 The accessibility system in Microsoft Edge inherently supports modern web standards including ARIA, HTML5, and CSS3.  The following diagram of the simplified browser pipeline follows webpage content into an accessible presentation layer:
 
-![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation](media/accessibilityarchitecture.png)
+![Content transformed to the engine model is projected into visual and accessibility views, presented as visual or accessible presentation](./index-images/accessibilityarchitecture.png)
 
 The Microsoft Edge team works with the W3C and other browser vendors on an ongoing basis to ensure that new web platform features have sufficient built-in accessibility.
 

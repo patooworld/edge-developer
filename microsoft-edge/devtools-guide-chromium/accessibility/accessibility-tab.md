@@ -4,8 +4,9 @@ description: Testing accessibility using the Accessibility tab.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 12/01/2023
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -33,19 +34,19 @@ To open the **Accessibility** tab:
 
 1. In the **DOM Tree**, click the element that you want to inspect.  You can use the arrow keys to move through the DOM tree.
 
-1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button](../media/more-tabs-icon.msft.png)) button to the right of the **Styles** tab.
+1. Click the **Accessibility** tab, to the right of the **Styles** tab.  You might need to first click the **More tabs** (![the More tabs button](./accessibility-tab-images/more-tabs-icon.png)) button to the right of the **Styles** tab.
 
-![Inspect the h1 element of the DevTools homepage in the Accessibility tab](../media/accessibility-elements-accessibility.msft.png)
+![The Accessibility tab, in the Elements tool sidebar panel](./accessibility-tab-images/accessibility-elements-accessibility.png)
 
 
 <!-- ====================================================================== -->
-## View the position of an element in the Accessibility Tree
+## View the position of an element in the accessibility tree
 
 The [accessibility tree](https://developer.mozilla.org/docs/Glossary/AOM) is a subset of the DOM tree.  The accessibility tree only contains elements from the DOM tree that are relevant and useful for displaying the contents of a page through assistive technologies such as screen readers.
 
 Inspect the position of an element in the accessibility tree from the **Accessibility** tab.
 
-![The Accessibility Tree section](../media/accessibility-elements-accessibility-tree.msft.png)
+![The Accessibility Tree section](./accessibility-tab-images/accessibility-elements-accessibility-tree.png)
 
 
 <!-- ====================================================================== -->
@@ -55,7 +56,7 @@ ARIA attributes ensure that assistive technologies such as screen readers have a
 
 View the ARIA attributes of an element in the **Accessibility** tab.
 
-![The ARIA Attributes section](../media/accessibility-elements-accessibility-aria-attributes.msft.png)
+![The ARIA Attributes section](./accessibility-tab-images/accessibility-elements-accessibility-aria-attributes.png)
 
 
 <!-- ====================================================================== -->
@@ -65,10 +66,9 @@ Some accessibility properties are dynamically calculated by the browser.  These 
 
 View the computed accessibility properties of an element in the **Accessibility** tab.
 
-> [!NOTE]
-> For computed CSS properties, use the [Computed](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) tab.
+![The 'Computed Properties' section of the Accessibility tab](./accessibility-tab-images/accessibility-elements-accessibility-computed-properties.png)
 
-![The 'Computed Properties' section of the Accessibility tab](../media/accessibility-elements-accessibility-computed-properties.msft.png)
+Computed accessibility properties are different than computed CSS properties. To learn more about how to view computed CSS properties, see [View only the CSS that is actually applied to an element](../css/reference.md#view-only-the-css-that-is-actually-applied-to-an-element) in _CSS features reference_.
 
 
 <!-- ====================================================================== -->

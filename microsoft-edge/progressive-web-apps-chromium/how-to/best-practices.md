@@ -4,7 +4,8 @@ description: Learn best practices to build great PWAs.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 11/24/2022
 ---
 # Best practices for PWAs
@@ -43,7 +44,7 @@ To learn how to use PWA Builder and publish to the Microsoft Store, see [Publish
 
 Many users find apps on their devices by their icons. To help users find your app more easily, choose a recognizable icon, make sure it stands out, and make sure that it adapts to the devices your app is installed on.
 
-On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the `Alt`+`Tab` task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
+On Windows, your app icon appears in many places such as the taskbar, the Start menu, or the **Alt+Tab** task switcher. Provide multiple image sizes to ensure your app icon is easily recognizable in these places.
 
 To learn which image size are needed on Windows, see [Icon image sizes](./icon-theme-color.md#icon-image-sizes) in _Define icons and a theme color_.
 
@@ -103,9 +104,9 @@ See [Handle links to your Progressive Web Apps](./handle-urls.md) and [Handle pr
 
 #### Widgets
 
-![Experimental feature](../../media/experimental-tag.png)
+![Experimental feature](./best-practices-images/experimental-tag.png)
 
-Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 widgets board.
+Create your own app widgets to display in the operating system widget dashboard such as the Windows 11 Widgets Board.
 
 See [Build PWA-driven widgets](./widgets.md).
 
@@ -198,7 +199,7 @@ To test your app in multiple environments, consider the following techniques:
 <!-- ====================================================================== -->
 ## Support deep linking
 
-To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://en.wikipedia.org/wiki/Deep_linking).  
+To improve discovery and sharing of your app through the web and social media, route each page of your app to a unique URL and support [deep linking](https://wikipedia.org/wiki/Deep_linking).  
 
 
 <!-- ======================================================================

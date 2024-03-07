@@ -4,7 +4,7 @@ description: Console integration in the Microsoft Edge Developer Tools extension
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Console integration
@@ -38,7 +38,7 @@ If you launch the DevTools extension from the Run and Debug workflow, the **Debu
 <!-- ====================================================================== -->
 ## See also
 
-* [Console overview](/microsoft-edge/devtools-guide-chromium/console/index.md)
+* [Console overview](../../devtools-guide-chromium/console/index.md)
 * [Debugging](https://code.visualstudio.com/Docs/editor/debugging) - the Debug Console of Visual Studio Code.
 * [Get started using the DevTools extension for Visual Studio Code](./get-started.md)
 * [Microsoft Edge DevTools extension for Visual Studio Code](../microsoft-edge-devtools-extension.md)

@@ -4,8 +4,8 @@ description: In the WebView2 threading model, the WebView2 must be created on a 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 09/21/2021
 ---
 # Threading model for WebView2 apps
@@ -74,7 +74,7 @@ private void CoreWebView2_WebMessageReceived(object sender, CoreWebView2WebMessa
 > 1. In **Solution Explorer**, right-click the WebView2 project and then select **Properties**.
 > 1. Select the **Debug** tab, and then select the **Enable native code debugging** checkbox, as shown below.
 
-![Enabling native code debugging in Visual Studio](../media/webview-enable-native-debug.png)
+![Enabling native code debugging in Visual Studio](./threading-model-images/webview-enable-native-debug.png)
 
 
 <!-- ====================================================================== -->

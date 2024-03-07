@@ -4,8 +4,8 @@ description: How to test your legacy website or app in IE mode in Microsoft Edge
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: devtools
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 11/23/2021
 ---
 # Use Internet Explorer Driver to automate IE mode in Microsoft Edge
@@ -22,7 +22,7 @@ Starting **June 15, 2022**, Internet Explorer 11 will no longer be supported on 
 
 To begin automating tests in IE mode in Microsoft Edge, [download IEDriver](https://www.selenium.dev/downloads/).  Make sure that the version of IEDriver that you download is `4.0.0.0` or greater.
 
-![The IEDriver section of the Downloads page for Selenium](media/iedriver-install.msft.png)
+![The IEDriver section of the Downloads page for Selenium](./ie-mode-images/iedriver-install.png)
 
 
 <!-- ====================================================================== -->

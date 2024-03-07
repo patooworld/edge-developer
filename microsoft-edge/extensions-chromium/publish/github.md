@@ -4,19 +4,19 @@ description: Optionally log in to Partner Center by using your GitHub account cr
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 11/03/2022
+ms.service: microsoft-edge
+ms.subservice: extensions
+ms.date: 02/14/2024
 ---
 # Publish a Microsoft Edge extension by using a GitHub account
 
-If you're a GitHub user, you don't need to create a new Microsoft account (MSA) and remember extra passwords.  You can use GitHub authentication to sign into Partner Center and publish your Microsoft Edge extensions to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home/) website.
+If you're a GitHub user, you don't need to create a new Microsoft account (MSA) and remember extra passwords to sign into Partner Center.  You can use your personal GitHub credentials to sign into Partner Center and publish your Microsoft Edge extensions to the [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home/) website.
 
-> [!IMPORTANT]
-> Currently, you can only use your *personal* GitHub account to login to Partner Center.  Using your *work* account on GitHub to log in isn’t supported.
+Currently, you can only use your _personal_ GitHub account to login to Partner Center. Using your _work_ GitHub account isn't supported.
 
-A Microsoft account (MSA)_ is an Outlook.com, Live.com, or Hotmail.com account. This article covers several types of accounts. For a summary of these accounts, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
+A Microsoft account (MSA) is an Outlook.com, Live.com, or Hotmail.com account. This article covers several types of accounts. For a summary of these accounts, see [Types of accounts related to publishing Microsoft Edge extensions](create-dev-account.md#types-of-accounts-related-to-publishing-microsoft-edge-extensions).
 
-To begin submitting extensions by using GitHub, register for the Microsoft Edge program in Partner Center using your GitHub credentials.  You'll need to link your GitHub account to a Microsoft account (MSA), as described in the following steps.  The Microsoft account (MSA) will be created for you if necessary.
+To begin submitting extensions by using GitHub, register for the Microsoft Edge program in Partner Center using your GitHub credentials. A Microsoft account (MSA) will be created for you automatically if necessary.
 
 
 <!-- ====================================================================== -->
@@ -48,7 +48,7 @@ Microsoft checks whether your GitHub account is already linked to a Microsoft ac
 
 After your GitHub account is linked to a Microsoft account, you can start using your GitHub account to register as a Microsoft Edge extension developer to publish extensions free of charge.  See [Register as a Microsoft Edge extension developer](create-dev-account.md).
 
-After you're registered for the Microsoft Edge program, you can port your Chrome extensions to Microsoft Edge.  To help manage your Microsoft Edge extensions, you can add more users to the Partner Center account by linking an Azure Active Directory (Azure AD) account with your Partner Center account.  See [Add users to the Microsoft Edge program](aad-account.md).
+After you're registered for the Microsoft Edge program, you can port your Chrome extensions to Microsoft Edge.  To help manage your Microsoft Edge extensions, you can add more users to the Partner Center account by linking a Microsoft Entra ID account with your Partner Center account.  See [Add users to the Microsoft Edge program](aad-account.md).
 
 
 <!-- ====================================================================== -->

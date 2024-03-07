@@ -4,8 +4,8 @@ description: How to register your PWA as a protocol handler to more deeply integ
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: pwa
+ms.service: microsoft-edge
+ms.subservice: pwa
 ms.date: 01/12/2022
 ---
 # Handle protocols in Progressive Web Apps
@@ -16,7 +16,7 @@ With Protocol Handling, when a PWA is being installed, the PWA can register to h
 
 Custom protocols can also be handled, if a PWA registers a protocol that starts with the `web+` prefix.
 
-To learn more about other existing protocols, see [List of URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes).
+To learn more about other existing protocols, see [List of URI schemes](https://wikipedia.org/wiki/List_of_URI_schemes).
 
 
 <!-- ====================================================================== -->

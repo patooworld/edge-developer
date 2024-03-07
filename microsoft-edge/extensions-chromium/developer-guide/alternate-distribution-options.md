@@ -4,8 +4,9 @@ description: How to distribute extensions using alternate methods that don't use
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 11/11/2022
+ms.service: microsoft-edge
+ms.subservice: extensions
+ms.date: 05/05/2023
 ---
 # Alternative ways to distribute extensions
 
@@ -151,10 +152,19 @@ See also:
 * [Manifest file format for extensions](../getting-started/manifest-format.md)
 
 
+<!-- ====================================================================== -->
+## Blocking of extensions
+
+The policies for `ExtensionInstallForcelist`, block list, and `ExtensionSettings` are used when enterprises want to install or block specific extensions on the client machines.  Extensions and their origin that are configured in [ExtensionInstallForcelist](/deployedge/microsoft-edge-policies#extensioninstallforcelist), [ExtensionInstallSources](/deployedge/microsoft-edge-policies#extensioninstallsources), or [ExtensionSettings](/deployedge/microsoft-edge-policies#extensionsettings) take precedence over [BlockExternalExtensions](/deployedge/microsoft-edge-policies#blockexternalextensions).
+
+If the `BlockExternalExtensions` policy is set to `Not Configured` or `Disabled`, that doesn't have any effect.  If the `BlockExternalExtensions` policy is set to `Enabled`, external extension installation (by third party software) is prevented.
+
 
 <!-- ====================================================================== -->
 > [!NOTE]
-> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  The original page is found [here](https://developer.chrome.com/apps/external_extensions).
+> Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).  The original page is found [here](https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions).
+
+<!-- the original page for MV2 is found [here](https://developer.chrome.com/docs/extensions/mv2/external-extensions) -->
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

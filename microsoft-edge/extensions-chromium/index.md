@@ -4,8 +4,9 @@ description: An overview of building and publishing Microsoft Edge Extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 02/02/2023
+ms.service: microsoft-edge
+ms.subservice: extensions
+ms.date: 04/03/2023
 ---
 # Overview of Microsoft Edge extensions
 
@@ -19,9 +20,9 @@ An extension should include at least the following features:
 *   A JavaScript file that defines the function.
 *   HTML and CSS files that define the user interface.
 
-To work directly with a specific part of the browser, such as a window or tab, you must send API requests and must often reference the browser by name.
+To work directly with a specific part of the browser, such as a window or tab, you must send API requests, and must often reference the browser by name.
 
-![A Microsoft Edge extension](./media/example-extension-screenshot.png)
+![A Microsoft Edge extension](./index-images/example-extension-screenshot.png)
 
 
 <!-- ====================================================================== -->
@@ -29,7 +30,7 @@ To work directly with a specific part of the browser, such as a window or tab, y
 
 Great places to begin your extension development tutorials and documentation research are sites hosted by the browser organizations.  Some of the popular browsers to build extensions for include Microsoft Edge, Safari, Firefox, Chrome, Opera, and Brave. 
 
-The following table isn't exhaustive or definitive. It is just a starting point for your research.
+The following table isn't exhaustive or definitive; it's just a starting point for your research.
 
 | Web browser | Chromium-based? | Extension development webpage |
 |:--- |:--- |:--- |
@@ -55,7 +56,7 @@ The following content focuses mostly on Chromium extensions.
 
 
 <!-- ====================================================================== -->
-### Browser compatibility and extension testing
+## Browser compatibility and extension testing
 
 Occasionally, API parity doesn't exist between Chromium browsers.  For example, there are differences in the identity and payment APIs.  To make sure your extension meets customer expectations, review API status through the following official browser documentation:
 
@@ -68,7 +69,7 @@ The APIs that you require define the changes that you must make to address the d
 To test your extension in different environments before you submit the extension to a browser store, side-load the extension into your browser while you develop it.
 
 <!-- ====================================================================== -->
-### Publish your extension to browser stores
+## Publish your extension to browser stores
 
 You can submit and seek browser extensions in the following browser stores.
 
@@ -105,6 +106,26 @@ After you've successfully submitted your extension, your extension undergoes a r
 
 
 <!-- ====================================================================== -->
+## The Featured badge
+
+A **Featured** badge in the [Microsoft Edge Add-ons website](https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home) indicates that the extension has been determined to follow Microsoft's recommended best practices related to security, privacy, transparency, and user experience.
+
+![The Featured badge to the right of the extension name](./index-images/featured-badge.png)
+
+When you hover on a **Featured** badge, the tooltip reads: **This extension follows all of Microsoft's recommended practices and has been verified**.
+
+<!-- todo: uncomment after Featured badge appears:
+For example, the [Microsoft Editor: Spelling & Grammar Checker](https://microsoftedge.microsoft.com/addons/detail/microsoft-editor-spellin/hokifickgkhplphjiodbggjmoafhignh) extension has a **Featured** badge at the Microsoft Edge Add-ons website.
+-->
+
+The Microsoft Edge Add-ons team reviews each extension for adherence to [Best Practices for extensions](./developer-guide/best-practices.md) before granting the extension a **Featured** badge.  Badged extensions are curated solely for the purpose of providing Microsoft Edge users with secure browsing tools and high-quality experiences.  Developers cannot pay to receive a **Featured** badge for an extension.
+
+To help protect your browser settings, extensions that don't comply with Edge Add-Ons Store best practices are not badged.
+
+Just because an extension doesn't have a **Featured** badge, doesn't mean the extension is unsafe. It simply means that the extension doesn't meet Microsoft's security and quality standards to be badged as **Featured**.
+
+
+<!-- ====================================================================== -->
 ## See also
 
 *  [Extension concepts and architecture](getting-started/index.md)
@@ -114,7 +135,7 @@ External links:
 *  [Port a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension)
 *  [Build a Safari App extension](https://developer.apple.com/documentation/safariservices/safari_app_extensions/building_a_safari_app_extension)
 *  [Your first extension (Firefox)](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-*  [Get started tutorial (Chrome)](https://developer.chrome.com/extensions/getstarted)
+*  [Extensions > Get started](https://developer.chrome.com/docs/extensions/get-started/)
 *  [Get started (Opera)](https://dev.opera.com/extensions/getting-started)
 
 Extensions for Visual Studio Code rather than for Microsoft Edge:

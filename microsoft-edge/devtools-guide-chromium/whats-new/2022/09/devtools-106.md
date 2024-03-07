@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 106)
+title: What's New in DevTools (Microsoft Edge 106)
 description: "Introducing the Command Palette. Filter and automatically fix code issues in DevTools for Visual Studio Code. DevTools now uses less disk space when caching sourcemaps. Chromium color themes have been deprecated. Accessibility improvements in Focus Mode and high contrast mode. And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 09/29/2022
 ---
 # What's New in DevTools (Microsoft Edge 106)
@@ -17,7 +18,7 @@ ms.date: 09/29/2022
 
 <!-- Subtitle: Your favorite browser management and DevTools commands in one place. -->
 
-In Microsoft Edge 106, you can now enable and use the Command Palette experiment.  Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: `Ctrl`+`Shift`+`Spacebar`.
+In Microsoft Edge 106, you can now enable and use the Command Palette experiment.  Command Palette makes it possible to access browser management and developer tools commands with just one keyboard shortcut: **Ctrl+Shift+Spacebar**.
 
 
 To enable the Command Palette experiment:
@@ -31,8 +32,8 @@ To enable the Command Palette experiment:
 
    Note the keyboard shortcut, which is shown in the **Command Palette** section on the `edge://flags` page.
    <!--
-   *  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is `Ctrl`+`Shift`+`Spacebar`.
-   *  In Microsoft Edge 108 and later, the shortcut is `Ctrl`+`Q`. -->
+   *  In Microsoft Edge 106 and most releases of 107, the keyboard shortcut is **Ctrl+Shift+Spacebar**.
+   *  In Microsoft Edge 108 and later, the shortcut is **Ctrl+Q**. -->
 
 1. Click the **Restart** button, which appears in the lower right when you select **Enabled**.
 
@@ -41,7 +42,7 @@ To enable the Command Palette experiment:
 
 To quickly access the available browser management commands and DevTools commands, after you've enabled the experiment:
 
-1. In Microsoft Edge (with or without DevTools open), press `Ctrl`+`Shift`+`Spacebar`.
+1. In Microsoft Edge (with or without DevTools open), press **Ctrl+Shift+Spacebar**.
 
 1. Start typing.  The commands are filtered based on your input characters, and are grouped into categories such as **Suggestions**, **History**, and **DevTools**:
 
@@ -119,7 +120,7 @@ DevTools in **Dark+** theme:
 
 ![DevTools in Dark+ theme](./devtools-106-images/dark-plus-theme.png)
 
-There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
+There are many DevTools color themes to choose from, such as **Monokai** and **Solarized**.  To change the color theme in DevTools, click the **Settings** (![Settings icon](./devtools-106-images/settings-gear-icon-light-theme.png)) button, and then in the **Preferences** page, in the **Theme** dropdown menu, select a theme:
 
 ![Setting the DevTools theme to Monokai](./devtools-106-images/set-theme-monokai.png)
 
@@ -142,9 +143,8 @@ Screen readers now announce which **Dock location** button or which **Activity B
 ![The redesigned Docking menu in Focus Mode](./devtools-106-images/focus-mode-redesigned-docking-menu.png)
 
 See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
 * [Navigate DevTools with assistive technology](../../../accessibility/navigation.md)
-* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's new in DevTools (Microsoft Edge 105)_.
+* [Focus Mode: Improved location controls for DevTools, Activity Bar, and Quick View](../../../whats-new/2022/09/devtools-105.md#focus-mode-improved-location-controls-for-devtools-activity-bar-and-quick-view) in _What's New in DevTools (Microsoft Edge 105)_.
 
 
 #### Computed styles are easier to see in high contrast mode

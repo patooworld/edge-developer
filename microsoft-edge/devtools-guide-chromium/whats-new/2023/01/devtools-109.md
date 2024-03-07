@@ -1,10 +1,11 @@
 ---
-title: What's new in DevTools (Microsoft Edge 109)
+title: What's New in DevTools (Microsoft Edge 109)
 description: "Export DevTools instances with enhanced traces.  Debug Recalculate Styles events in Performance tool with selector stats.  Track GC'd objects when Allocation sampling in Memory tool.  Heap Snapshot Visualizer.  Quick View in Focus Mode has all tools.  Navigate directly to Styles in Elements tool.  And more."
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 01/13/2023
 ---
 # What's New in DevTools (Microsoft Edge 109)
@@ -26,7 +27,7 @@ When saving performance profiles, heap snapshots, allocation timelines, or alloc
 
 To try the enhanced traces feature:
 
-1. In DevTools, click the **Settings** (![Settings icon](../../../media/settings-gear-icon-light-theme.png)) button.
+1. In DevTools, click the **Settings** (![Settings icon](./devtools-109-images/settings-gear-icon-light-theme.png)) button.
 
 1. In the **Persistence** section of the **Preferences** settings page, select the **Export enhanced performance and memory traces** checkbox:
 
@@ -134,14 +135,11 @@ See also:
 
 <!-- Subtitle: Quick View now allows you to pick any tool, show several tools at once and persists across sessions. -->
 
-We listened to your feedback and improved the **Quick View** options in Focus Mode.  Instead of offering only a subset of the tools in a **Quick View** drop-down list, you can now select any DevTools tool by clicking the **More Tools** (![More Tools icon](../../../media/more-tools-icon-light-theme.png)) button, like in the main toolbar of DevTools.  Load any tool in the **Quick View** pane of DevTools, to show multiple tools at the same time.
+We listened to your feedback and improved the **Quick View** options in Focus Mode.  Instead of offering only a subset of the tools in a **Quick View** dropdown list, you can now select any DevTools tool by clicking the **More tools** (![More tools icon](./devtools-109-images/more-tools-icon-light-theme.png)) button, like in the main toolbar of DevTools.  Load any tool in the **Quick View** panel of DevTools, to show multiple tools at the same time.
 
-The state of your **Quick View** persists across DevTools sessions.  The **Quick View** pane automatically collapses if you open the same tool in the upper pane of DevTools.
+The state of your **Quick View** toolbar persists across DevTools sessions.  The **Quick View** panel automatically collapses if you open the same tool in the upper pane of DevTools.
 
-![Add tool to Quick View](./devtools-109-images/add-tool-to-quick-view.png)
- 
-See also:
-* [Simplify DevTools using Focus Mode](../../../experimental-features/focus-mode.md)
+![Adding a tool to the Quick View panel](./devtools-109-images/add-tool-to-quick-view.png)
 
 
 <!-- ====================================================================== -->

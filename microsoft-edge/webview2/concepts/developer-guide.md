@@ -4,8 +4,8 @@ description: Learn about development best practices to use when developing your 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/03/2021
 ---
 # Development best practices for WebView2 apps
@@ -23,7 +23,7 @@ If you use the Evergreen runtime, before running your WebView2 app, test whether
 <!-- ====================================================================== -->
 ## Run compatibility tests regularly when using the Evergreen Runtime
 
-When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoftedgeinsider.com/download) (Beta, Dev, or Canary).
+When using the Evergreen WebView2 Runtime, the runtime updates automatically, so you must regularly run compatibility tests.  To ensure that your WebView2 app will continue to work as expected, test your web content in the WebView2 control against [Microsoft Edge Insider (preview) Channels](https://www.microsoft.com/edge/download/insider) (Beta, Dev, or Canary).
 
 This guidance is similar to the guidance that we give to web developers.  See [Test your app for forward-compatibility](../concepts/distribution.md#test-your-app-for-forward-compatibility).
 

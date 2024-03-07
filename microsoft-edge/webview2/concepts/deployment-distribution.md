@@ -4,8 +4,8 @@ description: Deployment and distribution of WebView2 apps.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 02/16/2022
 ---
 # Deployment and distribution
@@ -16,3 +16,4 @@ Articles in this section:
 
 * [Enterprise management of WebView2 Runtimes](enterprise.md).
 * [Distribute an app as a single executable file](../how-to/static.md) - How to statically link the WebView2 loader library, to create a single-file app.
+* [Publish a UWP WebView2 app to the Microsoft Store](../how-to/publish-uwp-app-store.md)

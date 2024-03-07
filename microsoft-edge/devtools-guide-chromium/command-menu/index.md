@@ -4,8 +4,9 @@ description: A guide on how to open the Command Menu, run commands, see other ac
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 09/12/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -24,7 +25,7 @@ ms.date: 05/04/2021
 
 The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI and accomplish common tasks.  The Command Menu is similar to the [Command Palette in Visual Studio Code](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette):
 
-![Using the Command Menu to disable JavaScript](../media/command-menu-run-command-java.msft.png)
+![Using the Command Menu to disable JavaScript](./index-images/command-menu-run-command-java.png)
 
 
 <!-- ====================================================================== -->
@@ -32,24 +33,36 @@ The Command Menu provides a fast way to navigate the Microsoft Edge DevTools UI 
 
 To open the Command Menu:
 
-*  Click the **Customize and control DevTools** (![Customize icon](../media/customize-devtools-icon-light-theme.png)) menu button, and then select **Run command**:
+1. To open DevTools, right-click a webpage and then select **Inspect**.
 
-   ![The Run Command](../media/command-menu-options-run-command.msft.png)
+1. Click the **Customize and control DevTools** (![Customize icon](./index-images/customize-devtools-icon.png)) button, and then select **Run command**:
 
-   Or, press `Ctrl`+`Shift`+`P` (Windows, Linux) or `Command`+`Shift`+`P` (macOS).
+   ![The Run Command](./index-images/command-menu-options-run-command.png)
 
+   Or, press **Ctrl+Shift+P** (Windows, Linux) or **Command+Shift+P** (macOS).
+
+   The Command Menu initially opens with a `>` character prepended to its text box:
+
+   ![The command character](./index-images/command-menu-run-command.png)
+
+1. Start typing a keyword, and then select a command from the filtered list.
 
 
 <!-- ====================================================================== -->
 ## Display other available actions
 
-The Command Menu initially opens with a `>` character prepended to its text box:
+To show other kinds of Command Menu actions besides **Run Command**, delete the `>` character and then type **?**:
 
-![The command character](../media/command-menu-run-command.msft.png)
+![Other available actions](./index-images/command-menu-help.png)
 
-To show other actions that are available from the Command Menu, delete the `>` character and then type **?**:
+Available actions include:
+* **Open File**
+* **Run Command**
+* **Go to Symbol**
+* **Go to Line**
+* **Run Snippet**
 
-![Other available actions](../media/command-menu-help.msft.png)
+The actions other than **Run Command** require input, such as a filename or line number.
 
 
 <!-- ====================================================================== -->

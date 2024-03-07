@@ -4,8 +4,9 @@ description: Testing accessibility using Lighthouse from within DevTools.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 06/07/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 11/20/2023
 ---
 <!-- this article was created on 05/11/2021 by moving a section out from the "Accessibility reference" article (reference.md) -->
 <!-- Copyright Kayce Basques
@@ -35,25 +36,35 @@ To audit a page using the Lighthouse tool:
 
 1. Go to the URL that you want to audit.
 
-1. In DevTools, select the **Lighthouse** tool.  Configuration options are displayed:
+1. To open DevTools, right-click the webpage, and then select **Inspect**.  Or, press **Ctrl+Shift+I** (Windows, Linux) or **Command+Option+I** (macOS).  DevTools opens.
 
-   ![Lighthouse configuration options](../media/accessibility-lighthouse.msft.png)
+1. In DevTools, on the **Activity Bar**, select the **Lighthouse** tab.  If that tab isn't visible, click the **More tools** (![More tools icon](./lighthouse-images/more-tools-icon.png)) button.
 
-1. For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
+   The **Lighthouse** tool configuration options are displayed:
 
-1. In the **Categories** section, select **Accessibility**.
+   ![The Lighthouse tool configuration screen](./lighthouse-images/accessibility-lighthouse.png)
 
-1. Click **Generate report**. After 10 to 30 seconds, DevTools displays a report.  The report gives tips on how to improve the accessibility of the page:
+1. Set the following configuration options:
 
-   ![A Lighthouse report for the Accessibility category](../media/accessibility-lighthouse-result.msft.png)
+   * For **Mode**, select **Navigation**.
+   * For **Device**, select **Mobile** if you want to simulate a mobile device.  This option changes your user agent string and resizes the viewport.  This option can affect the audit results.
+   * In the **Categories** section, select **Accessibility**, and clear the other categories:
 
-1. Select an item in the report to learn more about it.
+   ![The configuration options to use](./lighthouse-images/configuration-options.png)
 
-   ![An expanded issue in a Lighthouse report](../media/accessibility-lighthouse-result-issue-expanded.msft.png)
+1. Click the **Analyze page load** button.
 
-1. Click the **Learn more** link to view the documentation of the issue:
+   Lighthouse analyzes the page, and then DevTools displays a report.  The report shows a score for the page's accessibility, out of 100.  The report also gives tips on how to improve the accessibility of the page:
 
-   ![View the documentation of an issue](../media/accessibility-web-dev-accessibility-audits-learn-more.msft.png)
+   ![A Lighthouse report for the Accessibility category](./lighthouse-images/accessibility-lighthouse-result.png)
+
+1. Select an item in the report.  The item is expanded to show more information:
+
+   ![An expanded issue in a Lighthouse report](./lighthouse-images/accessibility-lighthouse-result-issue-expanded.png)
+
+1. Click the **Learn ...** link.  Documentation about the issue is displayed:
+
+   ![View the documentation of an issue](./lighthouse-images/accessibility-web-dev-accessibility-audits-learn-more.png)
 
 1. To return to the configuration options, in DevTools, click **Perform an audit** (`+`).
 

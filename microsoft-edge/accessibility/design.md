@@ -4,7 +4,7 @@ description: Resources for inclusive design tools and best practices.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.assetid: 8468f8e1-9f4a-426c-a969-76eab9419137
 ms.date: 10/27/2020
 ---
@@ -30,11 +30,11 @@ Users who are blind or who have low vision rely on screen readers to interpret a
 
 Many accessibility users rely on the keyboard to navigate and operate the UI by:
 
-*  Moving focus among elements by using the `Tab` key.
+*  Moving focus among elements by pressing the **Tab** key or **Shift+Tab** keys.
 
 *  Navigating in container elements such as lists, grids, and tree views by using the arrow keys.
 
-*  Invoking actions by pressing the `Enter` key or `Spacebar`.
+*  Invoking actions by pressing the **Enter** key or **Spacebar**.
 
 *  Using shortcut keys to efficiently access other app functionality.
 

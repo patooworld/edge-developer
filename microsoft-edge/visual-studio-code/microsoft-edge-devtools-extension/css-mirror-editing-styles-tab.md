@@ -4,7 +4,7 @@ description: Syncing live changes from the Styles tab by using CSS mirror editin
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 10/06/2022
 ---
 # Update .css files from within the Styles tab (CSS mirror editing)
@@ -17,7 +17,7 @@ CSS mirror editing provides two-way interaction so that you can change the CSS e
 
 CSS mirror editing is enabled by default in the extension.  As a result, in the DevTools extension, in the **Styles** tab in the **Elements** tool, when you change CSS selectors, rules, or values, the local `.css` file is automatically edited as you change values.
 
-For example, when you select a point size value for the body element and then press `Up Arrow` or `Down Arrow`, if you have the `.css` file opened, you can see the value automatically change in the `.css` file in realtime while you change the value in the **Styles** tab:
+For example, when you select a point size value for the body element and then press **Up Arrow** or **Down Arrow**, if you have the `.css` file opened, you can see the value automatically change in the `.css` file in realtime while you change the value in the **Styles** tab:
 
 ![Live editing of the .css file when you change values in the Styles tab](./css-mirror-editing-styles-tab-images/live-mirror-editing.png)
 
@@ -59,7 +59,7 @@ As a result of CSS mirror editing, Visual Studio Code also automatically navigat
 
 If you have writable, trusted source files, and you want your CSS changes in DevTools to be automatically edited in the source files, select the **CSS mirror editing** checkbox.  It is selected by default.
 
-Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via Activity Bar > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
+Clear the **CSS mirror editing** check box if you're experimenting only, and there's a URL rather than a file path in the address bar in the **Edge DevTools: Browser** tab, and don't have source files locally via **Activity Bar** > **Explorer** > the **Open Folder** button, and don't want error messages about mapping and mirror editing.
 
 To enable or disable CSS mirror editing:
 

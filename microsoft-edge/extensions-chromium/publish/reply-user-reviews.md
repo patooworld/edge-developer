@@ -4,7 +4,8 @@ description: You can view your Microsoft Edge extension's reviews and ratings an
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/07/2022
 ---
 # Reply to user reviews about your Microsoft Edge extension
@@ -19,7 +20,7 @@ To view your extension's **Reviews** page:
 
    Or, on the **Home** > **Edge** breadcrumb path, click the star rating of an extension on the **Overview** page.
 
-![Microsoft Partner Center reviews feature](media/user-reviews.png) 
+![Microsoft Partner Center reviews feature](./reply-user-reviews-images/user-reviews.png) 
 
 
 <!-- ====================================================================== -->

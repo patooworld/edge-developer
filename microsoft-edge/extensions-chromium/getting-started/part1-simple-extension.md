@@ -4,7 +4,8 @@ description: Build an extension that pops up the NASA picture of the day.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 06/28/2022
 ---
 # Create an extension tutorial, part 1
@@ -59,7 +60,7 @@ The following code outlines the basic information needed in your `manifest.json`
 
 Start by creating the `icons` directory in your project to store the icon image files.  The icons are used for the background image of the button that users select to launch the extension.
 
-![Icon on the toolbar to open your extension](./media/part1-badge1.png)
+![Icon on the toolbar to open your extension](./part1-simple-extension-images/part1-badge1.png)
 
 For icons:
 *  We recommend using `PNG` format, but you can also use `BMP`, `GIF`, `ICO` or `JPEG` formats.
@@ -69,7 +70,7 @@ The directories of your project should be similar to the following structure:
 
 ```shell
 └── part1
-    ├── _manifest.json
+    ├── manifest.json
     └── icons
         ├── nasapod16x16.png
         ├── nasapod32x32.png
@@ -141,7 +142,7 @@ Ensure that you add the image file `images/stars.jpeg` to the images folder.  Th
 
 ```shell
 └── part1
-    ├── _manifest.json
+    ├── manifest.json
     ├── icons
     │   ├── nasapod16x16.png
     │   ├── nasapod32x32.png

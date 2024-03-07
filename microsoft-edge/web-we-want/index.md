@@ -4,7 +4,7 @@ description: A cross-browser initiative focused on identifying missing features 
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 03/15/2021
 ---
 # The Web We Want initiative
@@ -21,7 +21,7 @@ The Web We Want initiative is the place to let browser vendors and standards gro
 
 *   Join in the [discussions](https://github.com/WebWeWant/webwewant.fyi/discussions) to provide feedback, link to resources, and otherwise help usher a Want into reality.
 
-*   Stay in touch by following the initiative on [Twitter](https://twitter.com/webwewantfyi) or [LinkedIn](https://www.linkedin.com/company/the-web-we-want) to keep up-to-date on what's in development, or to participate in surveys that help us prioritize submitted Wants.
+*   Stay in touch by following the initiative on [Twitter](https://twitter.com/webwewantfyi) or [LinkedIn](https://www.linkedin.com) (direct link: `https://www.linkedin.com/company/the-web-we-want`; requires sign in) to keep up-to-date on what's in development, or to participate in surveys that help us prioritize submitted Wants.
 
 
 <!-- ====================================================================== -->

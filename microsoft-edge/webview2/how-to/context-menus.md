@@ -4,8 +4,8 @@ description: How to add a right-click menu (context menu) to a WebView2 app.  Ad
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 04/27/2022
 ---
 # Customize context menus in WebView2
@@ -448,7 +448,7 @@ webView.CoreWebView2.ContextMenuRequested += delegate (object sender,
             {
                 MessageBox.Show(pageUri, "Page Uri", MessageBoxButton.OK);
             }, null);
-        }
+        };
     menuList.Insert(menuList.Count, newItem);
 };
 ``` 
@@ -649,7 +649,7 @@ The [CoreWebView2ContextMenuRequestedEventArgs](/dotnet/api/microsoft.web.webvie
    *  The internal name of the menu item.
    *  The UI label of the menu item, displayed to the user in the UI.
    *  The kind of menu item.
-   *  A keyboard shortcut Description, if any, such as `Alt+C`.
+   *  A keyboard shortcut Description, if any, such as **Alt+C**.
    *  Any other properties of the custom menu item.
 
 *  The coordinates where the context menu was requested, so your app can detect which UI item the user right-clicked.  The coordinates are defined in relation to the upper left corner of the WebView2 control.

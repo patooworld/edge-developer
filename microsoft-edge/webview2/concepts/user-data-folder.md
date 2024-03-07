@@ -4,8 +4,8 @@ description: How to manage user data folders in a WebView2 host app.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.technology: webview
+ms.service: microsoft-edge
+ms.subservice: webview
 ms.date: 08/31/2022
 ---
 # Manage user data folders
@@ -272,7 +272,7 @@ Use [ICoreWebView2Environment](/microsoft-edge/webview2/reference/win32/icoreweb
 
 ```cpp
 std::wstring m_userDataFolder;
-m_userDataFolder = L"C:\\MyAppUserDataFolder"
+m_userDataFolder = L"C:\\MyAppUserDataFolder";
 auto options = Microsoft::WRL::Make<CoreWebView2ExperimentalEnvironmentOptions>();
 
 HRESULT hr = CreateCoreWebView2EnvironmentWithOptions(
@@ -536,7 +536,7 @@ private void OnGetUDFClick(object sender, RoutedEventArgs e)
 }
 ```
 
-For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample).
+<!-- For example code, see the WinUI 3 `.cs` file, at [WebView2Samples repo > WebView2_WinUI3_Sample](https://github.com/MicrosoftEdge/WebView2Samples/tree/main/SampleApps/WebView2_WinUI3_Sample). -->
 
 
 ---

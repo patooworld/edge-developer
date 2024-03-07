@@ -4,7 +4,8 @@ description: How to use each Service Worker improvement.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: devtools
 ms.date: 02/19/2021
 ---
 # Service Worker improvements
@@ -33,7 +34,7 @@ The improved experiences span three different developer tools:
 <!-- ====================================================================== -->
 ## Network
 
-![Service worker timeline in the Network tool](../media/sw-network-timeline.msft.png)
+![Service worker timeline in the Network tool](./index-images/sw-network-timeline.png)
 
 You can access the service worker debugging features in the **Network** tool in either of the following ways:
 
@@ -55,7 +56,7 @@ To learn more about the `respondWith` fetch events, click the dropdown arrow to 
 <!-- ====================================================================== -->
 ## Application
 
-![Application view](../media/sw-application-timeline.msft.png)
+![Application view](./index-images/sw-application-timeline.png)
 
 ### Service worker update timeline
 
@@ -79,7 +80,7 @@ See also [Application tool, to manage storage](../storage/application-tool.md).
 <!-- ====================================================================== -->
 ## Sources
 
-![The DOM tree](../media/sw-sources.msft.png)
+![The DOM tree](./index-images/sw-sources.png)
 
 To find more stack information, set a break point in the fetch handler.  The details lead to where the resource is requested in the page script.
 

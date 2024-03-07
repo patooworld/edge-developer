@@ -4,7 +4,8 @@ description: Content Security Policy for Microsoft Edge extensions.
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/09/2022
 ---
 # Content Security Policy (CSP)
@@ -211,7 +212,7 @@ Inline scripts can be allowed by specifying the base64-encoded hash of the sourc
 
 #### Remote Script
 
-If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
+If you require some external JavaScript or object resources, you can relax the policy to a limited extent by allowlisting secure origins from which scripts should be accepted.  Verify that runtime resources loaded with with elevated permissions of an Extension are exactly the resources you expect, and aren't replaced by an active network attacker.  As [man-in-the-middle attacks](https://wikipedia.org/wiki/Man-in-the-middle_attack) are both trivial and undetectable over HTTP, those origins aren't accepted.
 
 Currently, you can allowlist origins that have the following schemes: `blob`, `filesystem`, `https`, and `extension`.  The host part of the origin must explicitly be specified for the `https` and `extension` schemes.  Generic wildcards such as https:, `https://*` and `https://*.com` aren't allowed; subdomain wildcards such as `https://*.example.com` are allowed.  Domains in the [Public Suffix list](https://publicsuffix.org/list) are also viewed as generic top-level domains.  To load a resource from these domains, the subdomain must explicitly be listed.  For example, `https://*.cloudfront.net` is not valid, but `https://XXXX.cloudfront.net` and `https://*.XXXX.cloudfront.net` can be `allowlisted`.
 
@@ -305,9 +306,10 @@ While the initial script runs, the call to `eval` is blocked.  That is, while th
 Since content scripts aren't affected by the CSP of the page, this a great reason to put as much behavior as possible of your Extension into the content script, rather than DOM injected scripts.
 
 
+<!-- ====================================================================== -->
 > [!NOTE]
 > Portions of this page are modifications based on work created and [shared by Google](https://developers.google.com/terms/site-policies) and used according to terms described in the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).
-> The original page is found [here](https://developer.chrome.com/extensions/contentSecurityPolicy).
+> The original page is found [here](https://developer.chrome.com/docs/extensions/reference/manifest/content-security-policy).<!-- or: https://developer.chrome.com/docs/privacy-security/csp -->
 
 [![Creative Commons License](../../media/cc-logo/88x31.png)](https://creativecommons.org/licenses/by/4.0)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0).

@@ -4,8 +4,9 @@ description: Use virtual devices in Microsoft Edge to enhance your website for d
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 05/04/2021
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 07/21/2023
 ---
 # Emulate dual-screen and foldable devices
 
@@ -19,7 +20,7 @@ Emulate the devices and toggle between the following postures:
 *  Single-screen or folded posture.
 *  Dual-screen or unfolded posture.
 
-![Emulating Surface Duo in Microsoft Edge](../media/experiments-surface-duo-emulation.msft.png)
+![Emulating Surface Duo in Microsoft Edge](./dual-screen-and-foldables-images/experiments-surface-duo-emulation.png)
 
 
 <!-- ====================================================================== -->
@@ -29,11 +30,11 @@ When you emulate the [Surface Duo](https://www.microsoft.com/surface/devices/sur
 
 The emulated display matches the way your website (or app) renders in the [Microsoft Edge Android app](https://play.google.com/store/apps/details?id=com.microsoft.emmx) while running on [Surface Duo](https://www.microsoft.com/surface/devices/surface-duo).  You may have to update your website (or app) to display better along the seam.  For more information about adapting your website (or app) to the seam, see [How to work with the seam](/dual-screen/introduction#how-to-work-with-the-seam).
 
-The [Device Toolbar](../device-mode/index.md#simulate-a-mobile-viewport) has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** (![Rotate](../media/rotate-dark-icon.msft.png)) to rotate the viewport to landscape orientation. Combine the feature with **Span** (![Span](../media/span-dark-icon.msft.png)) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features allow you to test your website or app in all four possible postures and orientations.
+The [Device Toolbar](../device-mode/index.md#simulate-a-mobile-viewport) has additional features to help you test your website or app in multiple postures and orientations.  Click **Rotate** (![Rotate](./dual-screen-and-foldables-images/rotate-dark-icon.png)) to rotate the viewport to landscape orientation. Combine the feature with **Span** (![Span](./dual-screen-and-foldables-images/span-dark-icon.png)) to toggle between single-screen or folded and dual-screen or unfolded postures.  Together, the features allow you to test your website or app in all four possible postures and orientations.
 
-![Matrix of postures and orientations for dual-screen and foldable devices](../media/experiments-dual-screen-emulation-rotate-span.msft.png)
+![Matrix of postures and orientations for dual-screen and foldable devices](./dual-screen-and-foldables-images/experiments-dual-screen-emulation-rotate-span.png)
 
-The **Experimental Web Platform features** (![ExperimentalApis](../media/experimental-apis-dark-icon.msft.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
+The **Experimental Web Platform features** (![ExperimentalApis](./dual-screen-and-foldables-images/experimental-apis-dark-icon.png)) icon displays the state of the **Experimental Web Platform features** flag.  If the flag is turned on, the icon is highlighted.  If the flag is turned off, the icon isn't highlighted.  To turn on (or off) the flag, either click the icon or go to `edge://flags` and toggle the flag.
 
 ### Known issues
 

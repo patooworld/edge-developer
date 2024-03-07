@@ -4,7 +4,8 @@ description: Learn how to verify your account information when your company enro
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
+ms.subservice: extensions
 ms.date: 11/02/2022
 ---
 # Verify the company account information associated with your Microsoft Partner Center account
@@ -70,7 +71,7 @@ Submit one of the following documents for business verification:
 * Record on a Government registry website. The site/link must be displayed.
 * Stock exchange filings or tax filing records.
 * External company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
-* Receipt from the company's home country, municipality.
+* Receipt from the company's home country/region, municipality.
 
 Confirm that the company name and address in your [Legal business profile](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer) don't have spelling errors or abbreviations. They must match your formal company business registration records exactly. If appropriate, select the match found in external company databases, such as Dun & Bradstreet (DUNS ID) or state registry.
 
@@ -113,7 +114,7 @@ Use the following steps to appeal a rejected application:
 
 The amount of time required to review an appeal varies. You can return to **[Account Settings | Legal Info](https://partner.microsoft.com/dashboard/account/v3/organization/legalinfo#developer)** to check verification status at any time. Verification status is **Pending** during the review.
 
-![Account Settings | Legal Info](media/account-settings-legal-info-microsoft-edge-partner-center.png)
+![Account Settings | Legal Info](./verify-microsoft-edge-program-images/account-settings-legal-info-microsoft-edge-partner-center.png)
 
 
 > [!NOTE]
@@ -129,5 +130,5 @@ To view your verification status, go to [Partner Center](https://partner.microso
 
 *  [Publish an extension](publish-extension.md) - Provides detailed information and steps for publishing an extension.
 
-*  [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Azure Active Directory account with your Microsoft account (MSA) on Partner Center.
+*  [Add users to the Microsoft Edge program](aad-account.md) - Describes how to add more users to your Microsoft Edge program and your Partner Center developer account.  To enable adding users, you associate your organization's Microsoft Entra ID account with your Microsoft account (MSA) on Partner Center.
 

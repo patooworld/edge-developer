@@ -4,7 +4,7 @@ description: Using the Microsoft Edge Developer Tools extension for Visual Studi
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
+ms.service: microsoft-edge
 ms.date: 12/06/2022
 ---
 # Microsoft Edge DevTools extension for Visual Studio Code
@@ -63,7 +63,7 @@ You can change CSS in the `.css` or `.html` source file, save the change, and th
 
 #### HTML
 
-You can edit the DOM tree in the **Edge DevTools** tab (such as changing `<h2>Success!</h2>` to `<h2>CSS Success!</h2>`), then press `Enter`, then refresh the **Edge DevTools: Browser** tab to see the change.  (This doesn't automatically edit the `.html` source file.)
+You can edit the DOM tree in the **Edge DevTools** tab (such as changing `<h2>Success!</h2>` to `<h2>CSS Success!</h2>`), then press **Enter**, then refresh the **Edge DevTools: Browser** tab to see the change.  (This doesn't automatically edit the `.html` source file.)
 
 You can change HTML in the `.html` source file, save the change, and then reload the webpage in the **Edge DevTools: Browser** tab, which also updates the **Edge DevTools** tab.
 

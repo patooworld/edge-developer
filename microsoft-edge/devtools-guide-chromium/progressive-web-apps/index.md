@@ -4,8 +4,9 @@ description: Use the Application panel to inspect, modify, and debug web app man
 author: MSEdgeTeam
 ms.author: msedgedevrel
 ms.topic: conceptual
-ms.prod: microsoft-edge
-ms.date: 12/13/2022
+ms.service: microsoft-edge
+ms.subservice: devtools
+ms.date: 09/12/2023
 ---
 <!-- Copyright Kayce Basques
 
@@ -22,21 +23,24 @@ ms.date: 12/13/2022
    limitations under the License.  -->
 # Debug Progressive Web Apps (PWAs)
 
-Use the **Application** panel to inspect, modify, and debug web app manifests, service workers, and service worker caches.
+Use the **Application** tool to inspect, modify, and debug web app manifests, service workers, and service worker caches.  The **Application** tool includes the following panes for Progressive Web App features:
 
-This article only discusses the Progressive Web App features of the **Application** panel.  For help on the other panes in the **Application** panel, see [View the resource files that make up a webpage](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
+*  Use the **Manifest** pane to inspect your web app manifest and trigger "Add to Homescreen" events.
 
-See also [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md).
+*  Use the **Service Workers** pane for service-worker-related tasks, such as:
+   * Unregistering or updating a service.
+   * Emulating push events.
+   * Going offline.
+   * Stopping a service worker.
 
-### Summary
+*  Use the **Cache Storage** pane to view your service worker cache.
 
-*  Use the **Manifest** pane to inspect your web app manifest and trigger Add to Homescreen events.
+*  Use the **Storage** pane to unregister a service worker and clear all storage and caches.
 
-*  Use the **Service Workers** pane for a whole range of service-worker-related tasks, like unregistering or updating a service, emulating push events, going offline, or stopping a service worker.
+This article discusses the Progressive Web App features of the **Application** tool.  For help on the other panes in the **Application** tool, see [View the resource files that make up a webpage](../resources/index.md) and [View and edit local storage](../storage/localstorage.md).
 
-*  View your service worker cache from the **Cache Storage** pane.
-
-*  Unregister a service worker and clear all storage and caches with a single button click from the **Storage** pane.
+See also:
+* [Overview of Progressive Web Apps (PWAs)](../../progressive-web-apps-chromium/index.md)
 
 
 <!-- ====================================================================== -->
@@ -51,18 +55,29 @@ If you want your users to be able to add your app to their mobile homescreens, y
 
 <!--TODO:  Link to sections when available. -->
 
-After you have your manifest set up, you can use the **Manifest** pane of the **Application** panel to inspect it.
+After you have your manifest set up, you can use the **App Manifest** pane of the **Application** tool to inspect your manifest:
 
-![The Manifest Pane](../media/manifest-pane.msft.png)
+![The Manifest Pane](./index-images/manifest-pane.png)
 
-*  To look at the manifest source, click the link below **App Manifest** label (`https://airhorner.com/manifest.json` in the previous figure).
+The **App Manifest** pane contains the following sections:
+* Manifest link
+* **Identity**
+* **Presentation**
+* **Protocol Handlers**
+* **Icons**
+* **Window Controls Overlay**
+* **Screenshot #1**
+* **Screenshot #2**
+
+*  To look at the manifest source, click the link below the **App Manifest** label (`manifest.json` in the previous figure, which opens `https://airhorner.com/manifest.json`).
 <!-- *  Click the **Add to homescreen** button to simulate an Add to Homescreen event.  Check out the next section for more information.  -->
 
-*  The **Identity** and **Presentation** sections just display fields from the manifest source in a more user-friendly display.
+*  The **Identity** and **Presentation** sections display fields from the manifest source in a more user-friendly display.
 
-*  The **Icons** section displays every icon that you've specified.
+*  The **Icons** section displays every icon that's been specified in the manifest.
 
-<!--### Simulate Add to Homescreen events  -->
+
+<!--#### Simulate Add to Homescreen events  -->
 
 <!--A web app may only be added to a homescreen when the site is visited at least twice, with at least five minutes between visits.  While developing or debugging your Add to Homescreen workflow, the criteria is potentially inconvenient.
 The **Add to homescreen** button on the **App Manifest** pane lets you simulate Add to Homescreen events whenever you want.  -->
@@ -70,7 +85,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!--You can test out this feature with the [Microsoft I/O 2016 progressive web app](https://events.alpahabet.com/io2016/), which has proper support for Add to Homescreen.  Choosing on **Add to Homescreen** while the app is open prompts Microsoft Edge to display the "add this site to your shelf" banner, which is the desktop equivalent of the "add to homescreen" banner for mobile devices.  -->
 
 <!--
-![Add to desktop shelf](../media/io.msft.png)
+![Add to desktop shelf](../media/io.png)
 -->
 
 <!--
@@ -89,7 +104,7 @@ The **Add to homescreen** button on the **App Manifest** pane lets you simulate 
 <!-- ====================================================================== -->
 ## Service workers
 
-Service workers are a fundamental technology in the future web platform.  They are scripts that the browser runs in the background, separate from a web page.  The scripts allow you to access features that without the need of a web page or user interaction, like push notifications, background sync, and offline experiences.
+Service workers are a fundamental technology in the web platform.  Service workers are scripts that the browser runs in the background, separate from a web page.  These scripts enable you to access features that don't need a webpage or user interaction, such as push notifications, background sync, and offline experiences.
 
 <!--Related Guides:
 
@@ -100,9 +115,9 @@ Service workers are a fundamental technology in the future web platform.  They a
 
 <!--TODO:  Link to sections when available. -->
 
-The **Service Workers** pane in the **Application** panel is the main place in DevTools to inspect and debug service workers.
+The **Service Workers** pane in the **Application** tool is the main place in DevTools to inspect and debug service workers:
 
-![The Service Workers pane](../media/service-workers-pane.msft.png)
+![The Service Workers pane](./index-images/service-workers-pane.png)
 
 *  If a service worker is installed to the currently open page, then it is listed on this pane.  For example, in the previous figure, there is a service worker installed for the scope of `https://weather-pwa-sample.firebaseapp.com`.
 
@@ -129,7 +144,7 @@ The **Service Workers** pane in the **Application** panel is the main place in D
 If the service worker causes any errors, a new label called **Errors** shows up.
 
 <!--
-![Service worker with errors](../media/sw-error.msft.png)
+![Service worker with errors](../media/sw-error.png)
 -->
 
 <!--TODO:  Capture Service Worker Errors sample when available. -->
@@ -139,16 +154,13 @@ If the service worker causes any errors, a new label called **Errors** shows up.
 <!-- ====================================================================== -->
 ## Service worker caches
 
-The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache).
+The **Cache Storage** pane provides a read-only list of resources that have been cached using the (service worker) [Cache API](https://developer.mozilla.org/docs/Web/API/Cache):
 
-![The Cache Storage Pane](../media/cache-pane-cache-storage-resources.msft.png)
+![The Cache Storage Pane](./index-images/cache-pane-cache-storage-resources.png)
 
-> [!NOTE]
-> The first time you open a cache and add a resource to it, DevTools may not detect the change.  Refresh the page and to display the cache.
+The first time you open a cache and add a resource to it, DevTools might not detect the change.  Refresh the page to display the cache.
 
-If you have two or more caches open, the caches are displayed under the **Cache Storage** dropdown list, as shown in the following screenshot.
-
-![The Cache Storage dropdown list](../media/cache-pane-cache-storage.msft.png)
+All open caches are listed under the **Cache Storage** expander.
 
 
 <!-- ====================================================================== -->
@@ -187,7 +199,7 @@ The **Storage** pane is a very useful feature when developing progressive web ap
 
 <!--## Other Application panel guides
 
-Check out the guides below for more help on the other panes of the **Application** panel.
+Check out the guides below for more help on the other panes of the **Application** tool.
 
 Related Guides:
 
