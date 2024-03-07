@@ -1,9 +1,10 @@
 {
   "name": "edge-developer",
   "version": "1.0.0",
-  "dependencies": {
+  "dependencies": { "snyk-upgrade-bcd66d1fc0d1be1278eaa7c7ae8ee4f0":
+    "glob": "^7.2.3",
     "@actions/github": "^5.1.1",
-    "glob": "^7.1.7",
+    "glob": "^7.1.7","main":
     "node-fetch": "3.2.10"
   }
 }
